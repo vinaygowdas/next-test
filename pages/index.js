@@ -15,7 +15,13 @@ export default function Home() {
                 <meta name="msapplication-TileColor" content="#603cba" />
                 <meta name="theme-color" content="#ffffff" />
 
-                <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="de074f9a-2221-44a6-98d6-79fa92f1db60";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+                <script 
+                    dangerouslySetInnerHTML={
+                        { 
+                        __html: `window.$crisp=[];window.CRISP_WEBSITE_ID="de074f9a-2221-44a6-98d6-79fa92f1db60";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();`
+                        }
+                    }
+                />
             </Head>
 
             <DefaultWelcome />
